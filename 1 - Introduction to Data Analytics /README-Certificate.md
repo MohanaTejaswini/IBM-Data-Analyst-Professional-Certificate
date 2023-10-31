@@ -22,7 +22,7 @@
 
 ---
 <p align="center">
-<img src="[/Tejaswini/DesktopTEJASWINI/My C details/Resumes and cover letter/course certificates/Course1.jpeg](https://www.coursera.org/account/accomplishments/certificate/VBB8W7FTN2UD)https://www.coursera.org/account/accomplishments/certificate/VBB8W7FTN2UD" width=60% height=60%>
+<img src="/MohanaTejaswini Certificates/Introduction to Data Analytics.png" width=60% height=60%>
 
   
 
