@@ -1,7 +1,31 @@
 
-## 🥇 Professional Certificate **
+# 🥇 Professional Certificate
 
-This credential earner has demonstrated proficiency in applying different analytical techniques by analyzing real-world datasets, creating visualizations & interactive dashboards, and presenting reports to share findings of data analysis, and is now equipped with skills for an entry-level role in data analytics. The earner has successfully completed 9 courses in Data Analytics and gained hands-on experience with data analysis tools, including Excel, SQL, Databases, Python, JupyterLab and Cognos.
 
+#### What you will learn : 
+
+- Explain what Data Analytics is and the key steps in the Data Analytics process.  
+
+- Differentiate between different data roles such as Data Engineer, Data Analyst, Data Scientist, Business Analyst, and Business Intelligence Analyst.
+
+- Describe the different types of data structures, file formats, sources of data, and data repositories. 
+
+- Identify key elements in the Data Analytics process by analyzing a business case study and its data set.
+
+---
+### SKILLS GAIN : 
+ - Data Science
+ - Spreadsheet
+ - Microsoft Excel
+ - Data Analysis
+ - Data Visualization (DataViz)
+
+---
 <p align="center">
-<img src="/Lakshmi Kadali Certificates/Lakshmi-Kadali-IBM-Data-Analyst-Professional-Certificate-Coursera KELB5RZGPCH2.png" width=80% height=80%>
+<img src="[/Tejaswini/DesktopTEJASWINI/My C details/Resumes and cover letter/course certificates/Course1.jpeg](https://www.coursera.org/account/accomplishments/certificate/VBB8W7FTN2UD)https://www.coursera.org/account/accomplishments/certificate/VBB8W7FTN2UD" width=60% height=60%>
+
+  
+
+
+
+---
