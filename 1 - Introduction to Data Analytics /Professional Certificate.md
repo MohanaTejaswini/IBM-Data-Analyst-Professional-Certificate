@@ -2,7 +2,7 @@
 # 🥇 Professional Certificate
 
 
-#### What you will learn : 
+### What you will learn : 
 
 - Explain what Data Analytics is and the key steps in the Data Analytics process.  
 
