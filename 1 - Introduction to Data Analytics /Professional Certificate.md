@@ -14,11 +14,11 @@
 
 ---
 ### SKILLS GAIN : 
- - Data Science
- - Spreadsheet
- - Microsoft Excel
- - Data Analysis
- - Data Visualization (DataViz)
+- Data Science
+- Spreadsheet
+- Microsoft Excel
+- Data Analysis
+- Data Visualization (DataViz)
 
 ---
 <p align="center">
