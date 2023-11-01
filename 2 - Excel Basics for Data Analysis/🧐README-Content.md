@@ -61,7 +61,7 @@ Perform the following steps to learn how to select different parts of your data 
 
 Note: The first time you press CTRL+A, it selects the current region if the worksheet contains data, the second time it selects the current data region and its header row, and the third time it selects the entire worksheet.
 
-# **Hands-on Lab 2: Spreadsheet Basics**
+# **Hands-on Lab 3: Entering and Formatting Data**
 
 ## Exercise 1: Viewing, Entering and Editing Data
 
