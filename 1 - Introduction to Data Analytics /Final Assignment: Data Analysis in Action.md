@@ -1,5 +1,6 @@
 
-# **Using Data Analysis for Detecting Credit Card Fraud**
+# **📝Using Data Analysis for Detecting Credit Card Fraud 📊🕵️💳**
+
 
 Companies today are employing analytical techniques for the early detection of credit card frauds, a key factor in mitigating fraud damage. The most common type of credit card fraud does not involve the physical stealing of the card, but that of credit card credentials, which are then used for online purchases.
 
