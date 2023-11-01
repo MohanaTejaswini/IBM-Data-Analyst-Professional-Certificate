@@ -50,16 +50,16 @@ In this exercise, you will explore the ribbon, then navigate around a worksheet,
 Perform the following steps to learn how to select different parts of your data (you can use the mouse to select cells if you prefer):
 
 1.
--To select cells in a single row: Select cell A1, then select cells A1 to D1 by using SHIFT+right arrow.
--To select cells in a single column: Select cell A1, then select cells A1 to A10 by using SHIFT+down arrow.
+- To select cells in a single row: Select cell A1, then select cells A1 to D1 by using SHIFT+right arrow.
+- To select cells in a single column: Select cell A1, then select cells A1 to A10 by using SHIFT+down arrow.
 
 2.To select multiple contiguous cols/rows: Select column A, and use SHIFT+ right arrow to reach column E.
 
 3.To select multiple non-contiguous cols/rows: Select column A, then hold CTRL and select column E.
 
 4.
--To select the entire worksheet: Click the corner button (small grey triangle in top left corner of the worksheet).
--To select all your data: Select any cell in the data, then press CTRL+A.
+- To select the entire worksheet: Click the corner button (small grey triangle in top left corner of the worksheet).
+- To select all your data: Select any cell in the data, then press CTRL+A.
 
 Note: The first time you press CTRL+A, it selects the current region if the worksheet contains data, the second time it selects the current data region and its header row, and the third time it selects the entire worksheet.
 
