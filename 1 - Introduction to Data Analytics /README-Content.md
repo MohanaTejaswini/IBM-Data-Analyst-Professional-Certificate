@@ -25,33 +25,33 @@
      
 ## 📙✏ What I learn : 
 
-1. **What is Data Analytics?**
+**1. What is Data Analytics?**
 
    Data analytics is the process of examining and interpreting data to extract valuable insights, identify patterns, and support decision-making. It involves the use of various techniques and tools to analyze data and draw conclusions.
 
-2. **Difference between Data Analytics and Data Science:**
+**2. Difference between Data Analytics and Data Science:**
 
    Data analytics primarily focuses on analyzing historical data to provide insights for informed decision-making. Data science encompasses a broader spectrum, involving data collection, cleaning, analysis, predictive modeling, and often more complex tasks, including machine learning and AI.
 
-3. **Different Types of Data Analysis:**
+**3. Different Types of Data Analysis:**
    
    - Descriptive Analysis: Summarizing and describing data.
    - Diagnostic Analysis: Identifying reasons for certain outcomes or issues.
    - Predictive Analysis: Forecasting future trends or events.
    - Prescriptive Analysis: Recommending actions to achieve specific outcomes.
 
-4. **Data Analytics Real-World Case Studies:**
+**4. Data Analytics Real-World Case Studies:**
    
    - Netflix using data analytics for content recommendations.
    - Uber optimizing routes and pricing through data analysis.
    - Healthcare providers using data analytics to improve patient care.
    - E-commerce companies analyzing customer behavior to enhance sales strategies.
 
-5. **What Does a Data Analyst Do?**
+**5. What Does a Data Analyst Do?**
    
    Data analysts collect, clean, analyze, and interpret data to provide actionable insights. They work with various stakeholders to support decision-making processes.
 
-6. **Typical Process Followed by a Data Analyst:**
+**6. Typical Process Followed by a Data Analyst:**
 
    - Define the problem or question.
    - Data collection and cleaning.
@@ -59,19 +59,19 @@
    - Data visualization and interpretation.
    - Communicate findings and recommendations.
 
-7. **Tools and Techniques Used by Data Analysts:**
+**7. Tools and Techniques Used by Data Analysts:**
    
    - Tools: Excel, Python, R, SQL, Tableau, Power BI.
    - Techniques: Descriptive and inferential statistics, regression analysis, data visualization, machine learning.
 
-8. **Data Analytics Techniques:**
+**8. Data Analytics Techniques:**
    
    Techniques include data cleaning, data transformation, hypothesis testing, regression analysis, clustering, time series analysis, and more.
 
-9. **Data Analytics Tools:**
+**9. Data Analytics Tools:**
    
    Tools like Excel, Python libraries (Pandas, NumPy, Matplotlib), R, SQL databases, Tableau, and Power BI.
 
-10. **Skills Required to Become a Data Analyst:**
+**10. Skills Required to Become a Data Analyst:**
     
     Analytical skills, data manipulation, statistics, programming, data visualization, communication, and domain knowledge.
