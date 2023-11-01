@@ -106,24 +106,24 @@ In this exercise, you will learn the basics of formulas, how to perform simple c
 In this exercise, you will have an introduction to functions, including using some common statistical functions, and then you will learn about some more advanced functions that a Data Analyst might also use.
 
 - In cells A16-A20, type the following:
-    Avg
-    Min
-    Max
-    Count
-    Median
+   -Avg
+   -Min
+   -Max
+   -Count
+   -Median
 - In B16, type =AVERAGE( then select cells B2 to B13 with the mouse, and press Enter. Select the fill handle on cell B16 and drag to G16 to copy the formula.
 - In B17, type =MIN( then select cells B2 to B13 with the mouse, and press Enter. Select the fill handle on cell B17 and drag to G17 to copy the formula.
 - In B18, type =MAX( then select cells B2 to B13 with the mouse, and press Enter. Select the fill handle on cell B18 and drag to G18 to copy the formula.
 - In B19, type =COUNT( then select cells B2 to B13 with the mouse, and press Enter. Select the fill handle on cell B19 and drag to G19 to copy the formula. Select row 19. On the Home tab, click the Number Format drop-down list, and select Number.
 - In B20, type =MEDIAN( then select cells B2 to B13 with the mouse, and press Enter. Select the fill handle on cell B20 and drag to G20 to copy the formula.
 - Explore some more commonly used functions of a data analyst by clicking the arrow under AutoSum, then select More Functions and look at some of the functions in various categories to see what actions they perform:
-     Financial : ACCRINT, INTRATE
-     Logical : AND, IF, OR, NOT
-     Text : CONCAT, FIND, SEARCH
-     Date & Time : NETWORKDAYS, WEEKDAY
-     Lookup & Reference : AREAS, SORTBY, VLOOKUP, HLOOKUP
-     Math & Trig : POWER, SUMIF, SUMPRODUCT
-     Statistical : AVERAGE, COUNTIF, MAX, MEDIAN, MIN
+     -Financial : ACCRINT, INTRATE
+     -Logical : AND, IF, OR, NOT
+     -Text : CONCAT, FIND, SEARCH
+     -Date & Time : NETWORKDAYS, WEEKDAY
+     -Lookup & Reference : AREAS, SORTBY, VLOOKUP, HLOOKUP
+     -Math & Trig : POWER, SUMIF, SUMPRODUCT
+     -Statistical : AVERAGE, COUNTIF, MAX, MEDIAN, MIN
 
 ## Exercise 3: Referencing Data in Formulas (relative vs absolute) & Formula Errors
 In this exercise, you will learn how to reference data in formulas; specifically differentiating between relative and absolute references, and you will also learn about error handling in formulas.
@@ -137,5 +137,106 @@ In this exercise, you will learn how to reference data in formulas; specifically
 - In cell B31, type =A16+A17. Now this will lead to a formula error #VALUE! since cells A16 and A17 do not contain any number.
 - Click the question mark icon in the error message box. This will open the Help for this topic. Read through this help file for more information about #VALUE! errors in formulas.
 
+# **Hands-on Lab 5: Cleaning Data**
 
+## Exercise 1: Removing Duplicated, Irrelevant or Inaccurate Data
+In this exercise, you will learn how to deal with inaccurate data, how to remove empty rows, and how to remove duplicated data.
 
+### Task A: Check spelling
+- Download the file Customer_demographics_and_sales_Lab5.xlsx. Upload and open it using Excel for the web.
+- Select column L (CREDITCARD_TYPE), then click Review tab, and select Spelling.
+- Click the correct suggestion to change the spelling.
+   -Note: Don’t change ‘jcb’ spelling when doing the spell check. We will need ‘jcb’ for the Exercise 1 Task D.
+- Close the Spelling pane.
+
+### Task B: Remove empty rows
+- Press CTRL+HOME, then press CTRL+SHIFT+END to select the whole datasheet.
+- On the Data tab, click Filter.
+- Press CTRL+HOME, click the filter arrow in the CUST_NAME column, and then click Filter.
+- Click the Select All checkbox to deselect all of them. Then select just Blanks, then OK.
+- Select first row, then press CTRL+SHIFT+END to select all rows.
+- Right-click the selected rows and then click Delete Rows.
+- Finally, on the Data tab, click Clear, then click Filter.
+
+### Task C: Remove duplicate rows
+- Select Column T (ORDER_ID) since ORDER_ID values are unique.
+- On the Home tab, click Conditional Formatting> Highlight Cells Rules> Duplicate Values, and then click OK.
+- Select the whole datasheet (CTRL+SHIFT+END)
+- On the Data tab, click Remove Duplicates.
+- In the Remove Duplicates dialog box, ensure that Select all columns is checked and that My data has headers is also checked, then click OK.
+- In the pop-up box informing you how many duplicate values were found and removed, click OK.
+
+### Task D: Use Find & Replace to correct misspelling
+- On the Home tab, click Find & Select.
+- Click Find. In Find what, type jcb, and click Find All.
+- Click Replace.
+- In Replace with, type JCB, click Replace All, and then click the Close icon.
+- On the Home tab, click Conditional Formatting> Clear Rules> Clear Rules from Entire Sheet.
+
+## Exercise 2: Dealing with Inconsistencies in Data
+In this exercise, you will learn how to change the case of text, how to change date formatting, and how to trim whitespace from data.
+
+### Task A: Use the PROPER function to change text from upper case to proper case
+- Select row 2, then right-click it and choose Insert Rows.
+- In cell A2, type =PROPER(A1) and press Enter.
+- Hover over the bottom-right corner of cell A2, and drag the Fill Handle across to the last column.
+    -If dragging across is too difficult with the mouse, then select the cells in the row 2 using SHIFT+RIGHT ARROW, then press F2 to put the cursor focus back in cell A2, then hold CTRL while you press Enter.
+- Select row 2, then press CTRL+C.
+- Select row 1, Right-click and choose Paste Options>Values.
+- Select row 2, right-click it and choose Delete Rows.
+
+### Task B: Use the UPPER function to change text from proper case to upper case
+- Select column AG (Generation). Then right-click and choose Insert Columns. In cell AG1, type Generation.
+- In cell AG2, type =UPPER(AH2) and press Enter.
+- Hover over the bottom-right corner of cell AG2 and double-click the Fill Handle.
+- Select column AG, then press CTRL+C.
+- Select column AH, right-click and choose Paste Options>Values.
+- Select column AG, right-click it and choose Delete Columns.
+
+### Task C: Use the LOWER function to change text from proper case to lower case
+- Select column AC (T_Type). Then right-click and choose Insert Columns. In cell AC1, type T_Type.
+- In cell AC2, type =LOWER(AD2) and press Enter.
+- Hover over the bottom-right corner of cell AC2 and double-click the Fill Handle.
+- Select column AC, then press CTRL+C.
+- Select column AD, right-click and choose Paste Options>Values.
+- Select column AC, right-click it and choose Delete Columns.
+
+### Task D: Change date formatting
+- Select column Z (Order_Ship_Date).
+- On the Home tab, in the Number group click Number Format> More Number Formats.
+- In the Category list, select Date.
+- In the Format Cells box, under Locale, select English (United States).
+- Under Type, select Wednesday, March 14, 2012 and click OK.
+
+### Task E: Use Find & Replace to trim whitespace
+- Click CTRL+HOME.
+- Select all the data using CTRL+SHIFT+END.
+- On the Home tab, click Find & Select, then Replace.
+- In Find what, type 2 spaces. In Replace with, type 1 space.
+- Click Find All, then click Replace All.
+- Click the Close icon.
+
+## Exercise 3: More Excel Features for Cleaning Data
+In this exercise, you will learn how to use the Flash Fill feature and functions in Excel to help clean data.
+
+### Task A: Use the Flash Fill feature to clean data:
+- Select column A (Cust_Name), right-click and choose Insert Columns.
+- In cell A1 type Customer_Name and press Enter.
+- In cell A2, type Mr. Allen Perl and press Enter.
+- Select column A (Customer_Name), on the Data tab, click Flash Fill.
+- Click Undo to undo this step.
+
+If you are using the desktop version of Excel, you could use the ‘Text to Columns’ feature to perform this next task (see the corresponding topic video for instructions).
+
+If you are using ‘Excel for the web’ (the online version of Excel), the ‘Text to Columns’ feature is not available, but you can achieve the same results using functions, as shown in the steps below.
+
+### Task B: Use LEFT, RIGHT, LEN, and SEARCH functions to clean data:
+- Select column A (Cust_Name), right-click and choose Insert Columns.
+- Select column A again, right-click and choose Insert Columns.
+- In cell A1, type Customer_Firstname and in cell B1, type Customer_Lastname.
+- Click C1, then on the Home tab, click Format Painter, then drag across to A1 and B1.
+- Double-click the divider between columns A and B.
+- In cell A2 type =LEFT(C2, SEARCH(“ “,C2,1)) and press Enter.
+- In cell B2 type =RIGHT(C2,LEN(C2)-SEARCH(“ “,C2,1)) and press Enter.
+- Double-click the Fill Handle on cell A2.
+- Double-click the Fill Handle on cell B2.
