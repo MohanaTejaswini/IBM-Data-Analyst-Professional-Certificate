@@ -44,3 +44,30 @@ As part of a Lab we used Jupyter Notebook or a Python script that aims to demons
 
 8. Additional Operations:
    - The code demonstrates how to select and describe specific columns within the DataFrame using the `.describe()` method.
+
+### Lab: Importing Data Sets - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/DA0101EN-executed-Review-Introduction.jupyterlite.ipynb)
+
+This code performs various tasks related to loading and inspecting a dataset using the Pandas library in Python. Here's an explanation of each task:
+
+**Task 1:** Load the dataset to a pandas dataframe named 'df' and print the first 5 entries of the dataset.
+- The `pd.read_csv` function is used to read a CSV file and create a Pandas DataFrame from it. The `path` variable specifies the file path.
+- `header=None` indicates that the CSV file doesn't have column headers, and Pandas should assign default column names.
+
+**Task 2:** Add headers to the dataframe and print the first 10 rows of the dataset.
+- This code defines a list of column headers and assigns them to the DataFrame using `df.columns`.
+- It also prints the first 10 rows to confirm the insertion of column headers.
+
+**Task 3:** Replace '?' with 'NaN' in the dataset.
+- This code uses `df.replace` to replace all occurrences of '?' with 'NaN' (Not a Number) in the DataFrame. The changes are made in place.
+
+**Task 4:** Print the data types of the dataframe columns.
+- This code uses the `.dtypes` attribute of the DataFrame to display the data types of each column.
+
+**Task 5:** Print the statistical description of the dataset, including that of 'object' data types.
+- This code provides a statistical summary of the dataset using the `.describe` method. The `include='all'` parameter ensures that statistics for both numerical and object data types are displayed.
+
+**Task 6:** Print the summary information of the dataset.
+- This code uses `df.info()` to display a concise summary of the DataFrame, including information about the number of non-null values and data types for each column.
+
+These tasks help you import the dataset, clean it by replacing missing values, assign column headers, and gain an initial understanding of the dataset's structure and characteristics.
