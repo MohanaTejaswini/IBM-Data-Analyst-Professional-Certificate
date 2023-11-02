@@ -112,3 +112,68 @@ These tasks help you import the dataset, clean it by replacing missing values, a
    - Example: `pd.get_dummies(df, columns=['categorical_column'])`.
 
 These data wrangling steps are essential for cleaning, formatting, and preparing data for analysis, machine learning, or other data-related tasks. The choice of which function to use depends on the specific characteristics of your dataset and your analysis goals.
+
+### Lab: Importing Data Sets - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/practice_data_executed-wrangling.jupyterlite.ipynb)
+
+**Lab Objectives:**
+1. **Handle Missing Data:**
+   - Identify columns with missing values and visualize the missing data.
+   - Replace missing values using appropriate strategies.
+
+2. **Correct Data Types:**
+   - Modify the data types of specific columns to match their actual data.
+
+3. **Data Standardization:**
+   - Standardize specific columns to a common unit.
+
+4. **Data Normalization:**
+   - Normalize a numerical attribute to a specific range (usually [0, 1]).
+
+5. **Binning:**
+   - Create categorical bins for a continuous variable, grouping similar values together.
+
+6. **Indicator Variables:**
+   - Convert a categorical attribute into binary indicator variables.
+
+**Detailed Explanation:**
+
+1. **Handle Missing Data:**
+   - *Identify Missing Data:*
+     - Used `df.isnull()` to create a DataFrame of the same shape with True (missing) and False (non-missing) values.
+   - *Column-wise Analysis:*
+     - Loop through columns and count missing values in each column using `missing_data[column].value_counts()`.
+   
+2. **Replace with Mean:**
+   - Missing values in the "Weight_kg" attribute were replaced with the mean value of the column.
+   - Used `df["Weight_kg"].replace(np.nan, avg_weight, inplace=True)` for this purpose.
+
+3. **Replace with Most Frequent Value:**
+   - Missing values in the "Screen_Size_cm" attribute were replaced with the most frequent value in the column.
+   - Used `common_screen_size = df['Screen_Size_cm'].value_counts().idxmax()` for this task.
+
+4. **Fixing Data Types:**
+   - Corrected data types for "Weight_kg" and "Screen_Size_cm" by using `df[["Weight_kg","Screen_Size_cm"]] = df[["Weight_kg","Screen_Size_cm"]].astype("float")`.
+
+5. **Data Standardization:**
+   - Standardized "Weight_kg" to pounds and "Screen_Size_cm" to inches:
+     - `df["Weight_kg"] = df["Weight_kg"] * 2.205`
+     - `df.rename(columns={'Weight_kg':'Weight_pounds'}, inplace=True)`
+     - `df["Screen_Size_cm"] = df["Screen_Size_cm"] * 2.54`
+     - `df.rename(columns={'Screen_Size_cm':'Screen_Size_inch'}, inplace=True)`.
+
+6. **Data Normalization:**
+   - Normalized the "CPU_frequency" attribute by dividing each value by the maximum value in the column:
+     - `df['CPU_frequency'] = df['CPU_frequency'] / df['CPU_frequency'].max()`.
+
+7. **Binning:**
+   - Created 3 bins for the "Price" attribute ("Low," "Medium," and "High"):
+     - Defined the bins using `bins = np.linspace(min(df["Price"]), max(df["Price"]), 4)`.
+     - Assigned labels using `group_names = ['Low', 'Medium', 'High']`.
+     - Added a new column "Price-binned" with the bin labels using `pd.cut()`.
+
+8. **Indicator Variables:**
+   - Converted the "Screen" attribute into indicator variables "Screen-IPS_panel" and "Screen-Full_HD" using `pd.get_dummies()` and renaming the columns.
+   - Dropped the original "Screen" attribute using `df.drop("Screen", axis=1, inplace=True)`.
+
+The dataset was processed and transformed according to the objectives, and the changes were verified using `df.head()` to ensure data quality and consistency.
