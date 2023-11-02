@@ -1,8 +1,7 @@
 
-# **Week 1: Hands-on Labs: Importing Data Sets**
+## **Week 1: Hands-on Labs: Importing Data Sets**
 
-## Lab: Importing Data Sets - Used Cars Pricing
-
+### Lab: Importing Data Sets - Used Cars Pricing
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/DA0101EN-executed-Review-Introduction.jupyterlite.ipynb)
 
 As part of a Lab we used Jupyter Notebook or a Python script that aims to demonstrate data acquisition and basic data exploration using the Pandas library. 
