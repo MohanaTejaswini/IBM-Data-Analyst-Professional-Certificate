@@ -45,7 +45,7 @@ As part of a Lab we used Jupyter Notebook or a Python script that aims to demons
 8. Additional Operations:
    - The code demonstrates how to select and describe specific columns within the DataFrame using the `.describe()` method.
 
-### Lab: Importing Data Sets - Used Cars Pricing
+### Lab: Importing Data Sets - Laptop Pricing
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/Practice_data_(executed-Laptop%20pricing%20data)loading.jupyterlite.ipynb)
 
 This code performs various tasks related to loading and inspecting a dataset using the Pandas library in Python. Here's an explanation of each task:
@@ -113,7 +113,7 @@ These tasks help you import the dataset, clean it by replacing missing values, a
 
 These data wrangling steps are essential for cleaning, formatting, and preparing data for analysis, machine learning, or other data-related tasks. The choice of which function to use depends on the specific characteristics of your dataset and your analysis goals.
 
-### Lab: Importing Data Sets - Used Cars Pricing
+### Lab: Data Wrangling - Laptop Pricing
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/practice_data_executed-wrangling.jupyterlite.ipynb)
 
 **Lab Objectives:**
