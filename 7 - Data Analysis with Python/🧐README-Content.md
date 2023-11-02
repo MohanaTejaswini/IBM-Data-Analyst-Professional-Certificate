@@ -46,7 +46,7 @@ As part of a Lab we used Jupyter Notebook or a Python script that aims to demons
    - The code demonstrates how to select and describe specific columns within the DataFrame using the `.describe()` method.
 
 ### Lab: Importing Data Sets - Used Cars Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/DA0101EN-executed-Review-Introduction.jupyterlite.ipynb)
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/Practice_data_(executed-Laptop%20pricing%20data)loading.jupyterlite.ipynb)
 
 This code performs various tasks related to loading and inspecting a dataset using the Pandas library in Python. Here's an explanation of each task:
 
