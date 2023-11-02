@@ -137,6 +137,8 @@ In this exercise, you will learn how to reference data in formulas; specifically
 - In cell B31, type =A16+A17. Now this will lead to a formula error #VALUE! since cells A16 and A17 do not contain any number.
 - Click the question mark icon in the error message box. This will open the Help for this topic. Read through this help file for more information about #VALUE! errors in formulas.
 
+----
+
 ## **Hands-on Lab 5: Cleaning Data**
 
 ### Exercise 1: Removing Duplicated, Irrelevant or Inaccurate Data
@@ -241,6 +243,8 @@ If you are using ‘Excel for the web’ (the online version of Excel), the ‘T
 - Double-click the Fill Handle on cell A2.
 - Double-click the Fill Handle on cell B2.
 
+----
+
 ## **Hands-on Lab 6: Filtering and Sorting Data using Functions for Data Analysis**
 
 ### Exercise 1: Filtering and Sorting Data
@@ -331,3 +335,73 @@ In this exercise, you will learn how to use the VLOOKUP and HLOOKUP functions in
 - In cell M3, type =HLOOKUP(G1, A1:H14, 10, FALSE) and press Enter.
 - Hover over the bottom-right corner of cell M3, and drag the Fill Handle down to the cell M5.
 - Select cells from M3 to M5 and select Number Format>Currency.
+
+----
+
+## **Hands-on Lab 7: Using Pivot Tables**
+
+### Exercise 1: Introduction to Creating Pivot Tables in Excel
+In this exercise, you will learn how to format data as a table, how to create a Pivot Table and use fields to arrange data in a Pivot Table, and how to perform calculations using Pivot Table data.
+
+#### Task A: Format data as a table
+- Download the file indian_startup_funding_Lab7.xlsx. Upload and open it using Excel for the web.
+- Select cell A2.
+- On the Home tab, in the Tables group, click Format as Table.
+- Select Light Gray, Table Style Medium 15.
+
+#### Task B: Create a pivot table and use fields to arrange data in a pivot table
+- Select cell D4
+- On the Insert tab, click PivotTable.
+- Click OK.
+- Double-click Sheet1, type Pivot1 and click OK.
+- In the fields list, drag Industry Vertical to Rows.
+- In the fields list, drag City Location to Rows above Industry Vertical.
+- In the fields list, drag Startup Name to Rows below Industry Vertical.
+- In the fields list, drag Amount in USD to Values.
+- Use the drop down arrow for the City Location and Sort By Value in descending order (Largest to smallest) by the Count of Amount in USD.
+- In the ribbon, select the PivotTable tab, click Settings, then in the PivotTable Settings pane, under Layout, select Single column.
+- Right-click on the row label Amritsar and select Expand/Collapse and Collapse Entire Field.
+
+#### Task C: Perform a simple calculation in a pivot table
+- In the PivotTable Fields pane, in the Values section, click the drop-down arrow next to Count of Amount in USD, and click Value Field Settings.
+- Select Summarize value field by > Sum.
+- Click OK.
+- Select the column called Sum of Amount in USD and then on the Home tab, select Accounting Number Format > $ English (United States).
+
+### Exercise 2: Pivot Table Features
+In this exercise, you will learn some other features that we can use with Pivot Tables, including Recommended Charts, Filters, Slicers, and Timelines.
+
+Note: The ‘Recommended Charts’ feature only works with ‘full’ Office for the web plans (those plans that come with an Office 365 subscription). Recommended Charts do not work with the ‘basic’ plan that comes with a Microsoft Account.
+
+#### Task A: Use of the Recommended Charts feature (Optional: If you have a full Office for the web plan)
+- Switch to worksheet indian-startup-funding.
+- Select column F (City Location).
+- On the Insert tab, select Recommended Charts.
+- Click + Insert PivotChart.
+- Switch to worksheet indian-startup-funding again.
+- Select column C, D, E.
+- On the Insert tab, select Recommended Charts.
+- Choose the recommended chart, and click + Insert PivotChart.
+
+#### Task B: Use of the Filters feature
+- Switch to worksheet Pivot1.
+- In the Pivot Table, click the Row Labels arrow.
+- Select City Location, then Filter….
+- Just select Burnsville, Delhi, New York, then click OK to display the amounts for startups in these three cities only.
+- In the Pivot Table, click the Row Labels arrow.
+- Select City Location, then click Clear Filter From ‘City Location’ to display the startups in all cities again.
+
+#### Task C: Use of the Slicers feature
+- Download the file indian_startup_funding_Lab7_with_slicers_timelines.xlsx. Upload and open it using Excel for the web.
+- Switch to worksheet Pivot1 if you are not there.
+- In the City Location slicer, select Burnsville, then Delhi, then New York.
+- To filter by multiple selection in the City Location slicer, with New York still selected, press CTRL and select Burnsville, and then Delhi.
+- To filter using more than one slicer, in the Investors Name slicer, select Amour Infrastructure, then press CTRL and select Westbridge Capital, and then Breakthrough Energy Ventures.
+- In the City Location slicer, click the Clear Filter button, then in the Investors Name slicer, click the Clear Filter button.
+
+#### Task D: Use of the Timelines feature
+- In the Date timeline, click top right drop-down and select DAYS, then scroll left and right.
+- In the Date timeline, click top right drop-down and select QUARTERS.
+- In the Date Timeline, select 2019 Q1, then drag 2019 Q1 to 2019 Q3.
+- In the Date timeline, click the Clear Filter icon.
+- In the Date timeline, click top right drop-down and select YEARS, then select 2020 only.
