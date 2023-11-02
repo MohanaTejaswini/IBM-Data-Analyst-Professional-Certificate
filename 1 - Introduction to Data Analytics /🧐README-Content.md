@@ -1,5 +1,5 @@
 
-# Introduction to Data Analytics 
+# 1 - Introduction to Data Analytics 
 
 ## 📍 About Course
 
