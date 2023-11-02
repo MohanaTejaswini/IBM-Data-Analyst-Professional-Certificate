@@ -240,3 +240,94 @@ If you are using ‘Excel for the web’ (the online version of Excel), the ‘T
 - In cell B2 type =RIGHT(C2,LEN(C2)-SEARCH(“ “,C2,1)) and press Enter.
 - Double-click the Fill Handle on cell A2.
 - Double-click the Fill Handle on cell B2.
+
+## **Hands-on Lab 6: Filtering and Sorting Data using Functions for Data Analysis**
+
+### Exercise 1: Filtering and Sorting Data
+In this exercise, you will learn how to use the Filter and Sort tools in Excel to filter and sort our data to enable us to control what information is displayed, and how it is displayed in our worksheets.
+
+#### Task A: Filtering data
+To use Auto Filters to filter data:
+- Download the file Customer_demographics_and_sales_Lab6.xlsx. Upload and open it using Excel for the web.
+- Select any cell in the data, and click the Data tab, then click Filter.
+- Click the filter drop-down in column AG (Purchase_Status), and select Filter….
+- In the list, only select Frequent and click OK.
+- Click the filter drop-down in the column AG, and click Clear Filter From “Purchase_Status”.
+- Click the filter drop-down in column AE (T_Type), and select Filter….
+- In the list, only select Cancelled and click OK.
+- Click the filter drop-down in column AF (Purchase_Touchpoint), and select Filter….
+- In the list, only select Desktop and click OK.
+- On the Data tab, click Clear.
+
+To use Custom Filters to filter data:
+- Click the filter drop-down in column AD (Order_Value), then Number Filters>Top 10….
+- Change the value from 10 to 50 and Click OK.
+- Click the filter drop-down in the column AD, and click Clear Filter From “Order_Value”.
+
+#### Task B: Sorting data
+- On the Data tab, click Custom Sort to open a dialog box like below.
+- Click the Column drop-down of row Sort By, select Order_Ship_Date.
+- Click the Order drop-down of row Sort By, select Sort Ascending.
+- Click Add.
+- Click the Column drop-down of row Then By, select Order_Value.
+- Click the Order drop-down of row Then By, select Sort Descending.
+- Click OK.
+
+### Exercise 2: Useful Functions for Data Analysis
+In this exercise, you will learn how to use some of the most common functions a Data Analyst might use; namely IF, IFS, COUNTIF, and SUMIF.
+
+#### Task A: Use of IF to apply one condition
+- Select column AF, right-click, Insert.
+- In cell AF1, type Complete?.
+- In cell AF2, type =IF(AE2=”Complete”,”Yes”,”No”) and press Enter.
+- Double-click the Fill Handle of AF2 to copy down the column.
+
+#### Task B: Use of Nested IF to apply multiple conditions
+- Select column AE, right-click, Insert.
+- In cell AE1, type Order Size (IF).
+- In cell AE2, type =IF(AD2>300,”Large”,IF(AD2>100,”Medium”,IF(AD2>0,”Small”))) and press Enter.
+- Double-click the Fill Handle of AE2 to copy down the column.
+
+#### Task C: Use of IFS to apply multiple conditions (alternative of Nested IF)
+- Select column AE, right-click, Insert.
+- In cell AE1, type Order Size (IFS).
+- In cell AE2, type =IFS(AD2>300,”Large”,AD2>100,”Medium”,AD2>0,”Small”) and press Enter.
+- Double-click the Fill Handle of AE2 to copy down the column.
+
+#### Task D: Use of COUNTIF to count the number of cells that meet a specified criterion
+- Select cell BX2 and type count VISA card.
+- Select cell BY2 and type =COUNTIF(N2:N195,”VISA”) and press Enter.
+
+#### Task E: Use of SUMIF function to sum the values within a specified range that meet a specified criterion
+- Select cell BX3 and type sum Large order.
+- Select cell BY3 and type =SUMIF(AE2:AE195,”Large”, AD2:AD195) and press Enter.
+      - Formula: =SUMIF(range, criteria, [sum range]).
+
+#### Task F: Use of SUMIFS function to sum the values within a specified range that meet multiple specified criteria
+- Select cell BX4 and type sum Large order with Baby Gen.
+- Select cell BY4 and type =SUMIFS(AD2:AD195, AE2:AE195,”Large”, AL2:AL195,”*BABY_BOOMERS*“) and press Enter.
+    - Formula: =SUMIFS ([sum range], range1, criteria1, range2, criteria2, …).
+
+### Exercise 3: Using the VLOOKUP and HLOOKUP Functions
+In this exercise, you will learn how to use the VLOOKUP and HLOOKUP functions in Excel to reference data contained in both vertical and horizontal lookup tables.
+
+#### Task A: Use of VLOOKUP to look up data in a table organized vertically
+- Download the file indian_startup_funding_Lab6.xlsx. Upload and open it using Excel for the web.
+- In cell K2,L2,M2, type VLOOKUP, Startup Name, Amount in USD respectively.
+- Select and copy cells from C9 to C15 and paste in cell L3.
+- In cell M3, type =VLOOKUP(L3, C2:I113, 7, FALSE) and press Enter.
+    - Formula: =VLOOKUP (value, table, col_index, [range_lookup]).
+- Hover over the bottom-right corner of cell M3, and drag the Fill Handle down to the cell M9.
+- Select cells from M3 to M9 and select Number Format>Currency.
+
+#### Task B: Use of HLOOKUP to look up data in a table organized horizontally
+- Download the file Personal_Monthly_Expenditure_Lab6.xlsx. Upload and open it using Excel for the web.
+- In cell J2,K2,L2,M2, type HLOOKUP, Month, Food & Dining, Health & Fitness respectively.
+- Select and copy cells from A10 to A12 and paste in cell K3.
+- In cell L3, type =HLOOKUP(D1, A1:H14, 10, FALSE) and press Enter.
+    - Formula: =HLOOKUP (value, table, row_index, [range_lookup]).
+- Hover over the bottom-right corner of cell L3, and drag the Fill Handle down to the cell L5.
+- Select cells from L3 to L5 and select Number Format>Currency.
+- In cell M3, type =HLOOKUP(G1, A1:H14, 10, FALSE) and press Enter.
+- Hover over the bottom-right corner of cell M3, and drag the Fill Handle down to the cell M5.
+- Select cells from M3 to M5 and select Number Format>Currency.
