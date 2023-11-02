@@ -71,3 +71,44 @@ This code performs various tasks related to loading and inspecting a dataset usi
 - This code uses `df.info()` to display a concise summary of the DataFrame, including information about the number of non-null values and data types for each column.
 
 These tasks help you import the dataset, clean it by replacing missing values, assign column headers, and gain an initial understanding of the dataset's structure and characteristics.
+
+----
+
+## **Week 2: Hands-on Labs: Data Wrangling**
+
+### Lab: Data Wrangling - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/DA0101EN-2-Review-executed-Data-Wrangling-20231003-1696291200.jupyterlite.ipynb)
+
+**Data Wrangling Functions and Process:**
+
+1. **Identify and Handle Missing Values:**
+   - *Identify Missing Values:*
+     - Function: `df.isnull()`
+     - Explanation: Use this function to locate missing values in your DataFrame. It returns a DataFrame of the same shape as the input with True (missing) and False (non-missing) values.
+   - *Deal with Missing Values:*
+     - Functions: `df.dropna()`, `df.fillna()`, `df.interpolate()`, etc.
+     - Explanation: Choose the appropriate function to handle missing values. 
+       - `dropna()`: Removes rows or columns with missing values.
+       - `fillna()`: Fills missing values with specified values.
+       - `interpolate()`: Interpolates missing values based on surrounding data.
+
+2. **Correct Data Format:**
+   - Ensure that data is in the correct format, addressing data type conversions and formatting issues. This is not a specific function but part of data cleaning.
+
+3. **Data Standardization:**
+   - Explanation: Standardize data by scaling numerical values to have a specific mean and standard deviation. This often involves using the formula: `(x - mean(x)) / std(x)` for each value 'x'.
+
+4. **Data Normalization:**
+   - Explanation: Normalize data to a predefined range, such as [0, 1]. This can be done using the formula: `(x - min(x)) / (max(x) - min(x))` for each value 'x'.
+
+5. **Binning:**
+   - Function: `pd.cut()`
+   - Explanation: Use `pd.cut()` to bin continuous data into discrete categories. You specify the number of bins and the range. Useful for converting continuous variables into categorical ones.
+   - Example: `pd.cut(df['column_name'], bins, labels=labels)`.
+
+6. **Indicator Variables:**
+   - Function: `pd.get_dummies()`
+   - Explanation: Employ `pd.get_dummies()` to perform one-hot encoding of categorical variables. It generates binary indicator variables for each category, allowing machine learning models to work with categorical data without ordinal relationships.
+   - Example: `pd.get_dummies(df, columns=['categorical_column'])`.
+
+These data wrangling steps are essential for cleaning, formatting, and preparing data for analysis, machine learning, or other data-related tasks. The choice of which function to use depends on the specific characteristics of your dataset and your analysis goals.
