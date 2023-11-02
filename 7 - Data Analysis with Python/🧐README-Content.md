@@ -2,7 +2,7 @@
 ## **Week 1: Hands-on Labs: Importing Data Sets**
 
 ### Lab: Importing Data Sets - Used Cars Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/DA0101EN-executed-Review-Introduction.jupyterlite.ipynb)
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
 
 As part of a Lab we used Jupyter Notebook or a Python script that aims to demonstrate data acquisition and basic data exploration using the Pandas library. 
 
@@ -46,7 +46,7 @@ As part of a Lab we used Jupyter Notebook or a Python script that aims to demons
    - The code demonstrates how to select and describe specific columns within the DataFrame using the `.describe()` method.
 
 ### Lab: Importing Data Sets - Laptop Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/Practice_data_(executed-Laptop%20pricing%20data)loading.jupyterlite.ipynb)
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Datasets%20(E)%20-%20Laptop%20Pricing-Practice_data_(Laptop%20pricing%20data)loading.ipynb)
 
 This code performs various tasks related to loading and inspecting a dataset using the Pandas library in Python. Here's an explanation of each task:
 
@@ -77,7 +77,7 @@ These tasks help you import the dataset, clean it by replacing missing values, a
 ## **Week 2: Hands-on Labs: Data Wrangling**
 
 ### Lab: Data Wrangling - Used Cars Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/DA0101EN-2-Review-executed-Data-Wrangling-20231003-1696291200.jupyterlite.ipynb)
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%202-%20Lab%20Data%20Wrangling%20(E)%20-%20Used%20Cars%20Pricing-DA0101EN-2-Review-Data-Wrangling.ipynb)
 
 **Data Wrangling Functions and Process:**
 
@@ -114,7 +114,7 @@ These tasks help you import the dataset, clean it by replacing missing values, a
 These data wrangling steps are essential for cleaning, formatting, and preparing data for analysis, machine learning, or other data-related tasks. The choice of which function to use depends on the specific characteristics of your dataset and your analysis goals.
 
 ### Lab: Data Wrangling - Laptop Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/practice_data_executed-wrangling.jupyterlite.ipynb)
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%202-%20Lab%20Data%20Wrangling%20(E)-%20Laptop%20Pricing-practice_data_wrangling.ipynb)
 
 **Lab Objectives:**
 1. **Handle Missing Data:**
