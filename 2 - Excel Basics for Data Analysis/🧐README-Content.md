@@ -72,7 +72,7 @@ Note: The first time you press CTRL+A, it selects the current region if the work
 ### Exercise 2: Copying, Filling, and Formatting Cells and Data
 In this exercise, you will learn how to move, copy, paste, and fill data, and how to format cells and cell data in a worksheet.
 
-####Task A: Copying and Filling Data
+#### Task A: Copying and Filling Data
 - Select A2:A5. Hover over the edge of the selected cells to get the Move pointer and then drag the selection to move the selected cells to B6. Click Undo.
 - Select cell A5. Hover over the bottom right corner of cell A5 to get the + (Fill Handle) symbol, then drag to A13.
 - On the Expense - 2018 sheet, select A1:G13 and press CTRL+C. Then on the Expense - 2019 sheet, select cell A1 and press CTRL+V.
