@@ -32,3 +32,21 @@
 **7: Using Pivot Tables**
 - Covers creating Pivot Tables, arranging data with fields, and performing calculations within Pivot Tables.
 - Introduces Pivot Table features, such as Recommended Charts, Filters, Slicers, and Timelines. These features allow you to analyze and visualize data efficiently within Pivot Tables.
+
+## 📙✏ What I learn : 
+
+In this hands-on lab series, you will learn the following skills related to Excel for data analysis:
+
+1. **Display Working Knowledge of Excel for Data Analysis:** You will gain proficiency in using Microsoft Excel for data analysis tasks. Excel is a powerful tool for working with data, and you'll become familiar with its features and functions.
+
+2. **Perform Basic Spreadsheet Tasks:** You will learn how to navigate within Excel, enter data, and use formulas for calculations. This foundational knowledge will enable you to work effectively with data in Excel.
+
+3. **Employ Data Quality Techniques:** You will discover techniques for importing and cleaning data in Excel. Ensuring data quality is essential for accurate analysis and reporting.
+
+4. **Analyze Data Using Filter and Sort:** You will understand how to filter and sort data to extract meaningful insights. These techniques are crucial for organizing and summarizing data.
+
+5. **Utilize Look-Up Functions:** You will learn how to use look-up functions, such as VLOOKUP and HLOOKUP, to retrieve specific information from large datasets. These functions are valuable for data retrieval and analysis.
+
+6. **Create Pivot Tables:** You will master the art of creating pivot tables, a powerful tool for summarizing, analyzing, and presenting data in a structured format. Pivot tables simplify complex data analysis tasks.
+
+By the end of this series, you will have a solid foundation in Excel for data analysis, making you proficient in working with spreadsheets, cleaning and preparing data, and using various Excel functions and features to extract valuable insights from your data. These skills are essential for anyone involved in data analysis or reporting.
