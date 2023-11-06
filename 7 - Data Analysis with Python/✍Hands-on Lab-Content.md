@@ -182,7 +182,7 @@ The dataset was processed and transformed according to the objectives, and the c
 
 ## **Week 3: Hands-on Labs: Exploratory Data Analysis**
 
-### Lab Exploratory Data Analysis - Used Car Pricing
+### Lab: Exploratory Data Analysis - Used Car Pricing
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/IBM-Data-Analyst-Professional-Certificate/blob/main/7%20-%20Data%20Analysis%20with%20Python/%E2%9C%8D%F0%9F%93%82Hands-on-Lab-FILES/week%203-%20Lab%20Exploratory%20Data%20Analysis%20(E)-%20Used%20Car%20Pricing-Exploratory_data_analysis_cars.ipynb)
 
 In the provided code and explanation, various functions and concepts related to data analysis and visualization are used. I will explain each function and concept with examples:
@@ -231,7 +231,7 @@ In the provided code and explanation, various functions and concepts related to 
 
 In your analysis, you've explored variables such as engine size, highway mpg, peak rpm, stroke, and more, assessing their relationships with car prices. This is a fundamental step in understanding which variables are important for building predictive models. You've also examined how to use various visualization techniques to convey these relationships effectively.
 
-### Lab Exploratory Data Analysis - Used Car Pricing
+### Lab: Exploratory Data Analysis - Laptop Pricing
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/IBM-Data-Analyst-Professional-Certificate/blob/main/7%20-%20Data%20Analysis%20with%20Python/%E2%9C%8D%F0%9F%93%82Hands-on-Lab-FILES/week%203-%20Lab%20Exploratory%20Data%20Analysis%20(E)-%20Laptop%20Pricing-%20Exploratory_data_analysis.jupyterlite.ipynb)
 
 1. **Visualize individual feature patterns**:
@@ -261,21 +261,143 @@ This lab guides you through exploring and analyzing the laptops pricing dataset,
 
 ----
 
-## **Week 4: Hands-on Labs: Importing Data Sets**
+## **Week 4: Hands-on Labs: Model Development**
 
-### Lab: Importing Data Sets - Used Cars Pricing
+### Lab: Model Development - Used Car Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/IBM-Data-Analyst-Professional-Certificate/blob/main/7%20-%20Data%20Analysis%20with%20Python/%E2%9C%8D%F0%9F%93%82Hands-on-Lab-FILES/week%204-%20Lab%20Model%20Development%20(E)%20-%20Used%20Car%20Pricing-DA0101EN-4-Review-Model-Development.ipynb)
+
+1. **Import Libraries:**
+   - `import pandas as pd`: Imports the Pandas library for data manipulation.
+   - `import numpy as np`: Imports the NumPy library for numerical operations.
+   - `import matplotlib.pyplot as plt`: Imports the Matplotlib library for data visualization.
+   - `from sklearn.linear_model import LinearRegression`: Imports the LinearRegression class from scikit-learn for linear regression modeling.
+
+2. **Loading Data:**
+   - The data is loaded from a CSV file (in this case, "usedcars.csv") into a Pandas DataFrame using `pd.read_csv(path)`.
+
+3. **Linear Regression:**
+   - `LinearRegression()`: Creates a linear regression model object from scikit-learn.
+
+4. **Fitting a Linear Model:**
+   - `lm.fit(X, Y)`: Fits the linear regression model with input features `X` and target variable `Y`.
+
+5. **Intercept and Coefficients:**
+   - `lm.intercept_`: Accesses the intercept (a) of the linear model.
+   - `lm.coef_`: Accesses the coefficients (b) of the linear model.
+
+6. **Model Evaluation Metrics:**
+   - `lm.score(X, Y)`: Computes the R-squared (coefficient of determination) to measure the goodness of fit.
+   - `mean_squared_error(y_true, y_pred)`: Computes the Mean Squared Error (MSE) to measure the accuracy of the model's predictions.
+
+7. **Visualization with Seaborn:**
+   - `import seaborn as sns`: Imports the Seaborn library for data visualization.
+   - `sns.regplot(x, y, data=df)`: Creates a scatter plot with a fitted regression line.
+   - `sns.residplot(x, y)`: Creates a residual plot to visualize the spread of residuals.
+
+8. **Polynomial Regression:**
+   - Polynomial regression models are created and fitted using `np.polyfit(x, y, degree)` and `np.poly1d(f)` functions.
+
+9. **Creating a Polynomial Features Object:**
+   - `from sklearn.preprocessing import PolynomialFeatures`: Imports PolynomialFeatures for generating polynomial features.
+
+10. **Data Pipelines:**
+    - Data preprocessing pipelines are created to streamline data transformation and modeling steps.
+
+11. **Creating a Pipeline:**
+    - `from sklearn.pipeline import Pipeline`: Imports the Pipeline class for creating a sequence of data processing steps.
+    - `pipe=Pipeline(steps)`: Initializes a data processing pipeline.
+
+12. **Pipeline Steps:**
+    - Data preprocessing steps, such as scaling and polynomial feature generation, are defined in a list of tuples and passed to the pipeline constructor.
+
+13. **Fitting a Model with a Pipeline:**
+    - `pipe.fit(X, y)`: Fits the data preprocessing steps and model simultaneously.
+
+14. **Predictions with a Pipeline:**
+    - `pipe.predict(X)`: Generates predictions using the fitted pipeline.
+
+15. **Model Evaluation Metrics (R-squared and MSE):**
+    - The lab uses R-squared and Mean Squared Error (MSE) to evaluate model performance.
+
+16. **Visualizing Predictions:**
+    - Predictions are visualized using Matplotlib by plotting input data against model predictions.
+
+17. **Decision Making for Model Selection:**
+    - Decision criteria are discussed based on R-squared and MSE for selecting the best-fitting model.
+
+These notes provide an overview of the functions and concepts used in the lab. Please refer to the specific code blocks and explanations in the lab for more details and context.
+
+### Lab: Model Development - Laptop Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/IBM-Data-Analyst-Professional-Certificate/blob/main/7%20-%20Data%20Analysis%20with%20Python/%E2%9C%8D%F0%9F%93%82Hands-on-Lab-FILES/week%204-%20Lab%20Model%20Development%20(E)-%20Laptop%20Pricing-%20practice_model_development_laptops.jupyterlite.ipynb)
+
+**Task 1: Single Linear Regression**
+
+1. **LinearRegression() Function**:
+   - Purpose: This function is used to create a linear regression model.
+   - Notes: It's used to perform linear regression with one independent variable (in this case, 'CPU_frequency').
+
+2. **lm.fit(X, Y)**:
+   - Purpose: This function fits the linear regression model to the data.
+   - Notes: It calculates the parameters of the linear model that best fits the relationship between the independent variable ('CPU_frequency') and the dependent variable ('Price').
+
+3. **sns.distplot() Function**:
+   - Purpose: This function is used to create a distribution plot.
+   - Notes: In this lab, it's used to visualize and compare the distribution of actual prices ('Actual Value') with the distribution of predicted prices ('Fitted Values').
+
+4. **mean_squared_error() Function**:
+   - Purpose: This function calculates the mean squared error (MSE) of the model.
+   - Notes: It measures the average squared difference between the actual prices and the predicted prices. A lower MSE indicates a better fit.
+
+5. **R-squared (R^2) Score**:
+   - Purpose: R-squared measures the goodness of fit of the linear regression model.
+   - Notes: It quantifies the proportion of the variance in the dependent variable ('Price') that is predictable from the independent variable ('CPU_frequency'). An R^2 score closer to 1 indicates a better fit.
+
+**Task 2: Multiple Linear Regression**
+
+1. **LinearRegression() Function**:
+   - Purpose: Same as in Task 1, this function is used to create a linear regression model.
+
+2. **Multiple Independent Variables**:
+   - Purpose: In this task, several independent variables are used.
+   - Notes: Multiple features, including 'CPU_frequency', 'RAM_GB', 'Storage_GB_SSD', 'CPU_core', 'OS', 'GPU', and 'Category', are used to create a multiple linear regression model.
+
+3. **Visualization of Distribution Plot**:
+   - Purpose: Same as in Task 1, it's used to create a distribution plot for actual and predicted values.
+
+4. **MSE and R^2 Evaluation**:
+   - Purpose: Similar to Task 1, these metrics are used to evaluate the performance of the multiple linear regression model.
+
+**Task 3: Polynomial Regression**
+
+1. **Polynomial Feature Generation**:
+   - Purpose: Polynomial features are generated for 'CPU_frequency'.
+   - Notes: Polynomial regression is used to fit polynomials of different degrees (1, 3, and 5) to the data to capture non-linear relationships.
+
+2. **PlotPolly() Function**:
+   - Purpose: A custom function for plotting polynomial regression.
+   - Notes: This function plots the polynomial response over the actual data points, providing visual insight into how well the polynomial fits the data.
+
+**Task 4: Pipeline**
+
+1. **Pipeline Creation**:
+   - Purpose: A machine learning pipeline is created.
+   - Notes: The pipeline includes three steps: scaling of parameters, generation of polynomial features, and linear regression. It's used to streamline the process.
+
+2. **MSE and R^2 Evaluation**:
+   - Purpose: Similar to previous tasks, these metrics are used to evaluate the performance of the pipeline, which combines scaling, polynomial features, and linear regression.
+
+These notes provide an overview of the functions and concepts used in the lab without the specific Python code.
+
+----
+
+## **Week 5: Hands-on Labs: **
+
+### Lab: 
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
 
 ----
 
-## **Week 5: Hands-on Labs: Importing Data Sets**
+## **Week 6: Hands-on Labs: **
 
-### Lab: Importing Data Sets - Used Cars Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
-
-----
-
-## **Week 6: Hands-on Labs: Importing Data Sets**
-
-### Lab: Importing Data Sets - Used Cars Pricing
+### Lab: 
 [Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
