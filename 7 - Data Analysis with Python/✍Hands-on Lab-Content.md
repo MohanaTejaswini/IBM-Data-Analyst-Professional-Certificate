@@ -177,3 +177,29 @@ These data wrangling steps are essential for cleaning, formatting, and preparing
    - Dropped the original "Screen" attribute using `df.drop("Screen", axis=1, inplace=True)`.
 
 The dataset was processed and transformed according to the objectives, and the changes were verified using `df.head()` to ensure data quality and consistency.
+
+## **Week 3: Hands-on Labs: Importing Data Sets**
+
+### Lab: Importing Data Sets - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
+
+----
+
+## **Week 4: Hands-on Labs: Importing Data Sets**
+
+### Lab: Importing Data Sets - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
+
+----
+
+## **Week 5: Hands-on Labs: Importing Data Sets**
+
+### Lab: Importing Data Sets - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
+
+----
+
+## **Week 6: Hands-on Labs: Importing Data Sets**
+
+### Lab: Importing Data Sets - Used Cars Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
