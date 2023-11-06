@@ -180,10 +180,84 @@ The dataset was processed and transformed according to the objectives, and the c
 
 ----
 
-## **Week 3: Hands-on Labs: Importing Data Sets**
+## **Week 3: Hands-on Labs: Exploratory Data Analysis**
 
-### Lab: Importing Data Sets - Used Cars Pricing
-[Lab reviewed Sheet](https://github.com/MohanaTejaswini/Project-1/blob/main/7%20-%20Data%20Analysis%20with%20Python/week%201-%20Lab%20Importing%20Data%20Sets%20(E)%20-%20Used%20Cars%20Pricing-%20DA0101EN-Review-Introduction.ipynb)
+### Lab Exploratory Data Analysis - Used Car Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/IBM-Data-Analyst-Professional-Certificate/blob/main/7%20-%20Data%20Analysis%20with%20Python/%E2%9C%8D%F0%9F%93%82Hands-on-Lab-FILES/week%203-%20Lab%20Exploratory%20Data%20Analysis%20(E)-%20Used%20Car%20Pricing-Exploratory_data_analysis_cars.ipynb)
+
+In the provided code and explanation, various functions and concepts related to data analysis and visualization are used. I will explain each function and concept with examples:
+
+1. Importing Libraries:
+   - `import matplotlib.pyplot as plt` and `import seaborn as sns` are used to import the Matplotlib and Seaborn libraries for data visualization.
+   - `%matplotlib inline` is a Jupyter Notebook magic command that allows plots to be displayed directly in the notebook.
+
+2. Checking Data Types:
+   - `df.dtypes` is used to check the data types of columns in a DataFrame `df`. It helps identify whether a variable is numeric or categorical.
+
+3. Correlation Analysis:
+   - `df.corr()` computes the correlation matrix between numeric columns in the DataFrame, indicating the strength and direction of linear relationships between variables.
+
+4. Scatter Plots with Regression Lines:
+   - `sns.regplot()` is used to create scatter plots with fitted regression lines. It helps visualize relationships between two continuous variables.
+   - Example: `sns.regplot(x="engine-size", y="price", data=df)` creates a scatter plot for the "engine-size" vs. "price" relationship.
+
+5. Box Plots:
+   - `sns.boxplot()` is used to create box plots, which visualize the distribution of a variable within different categories.
+   - Example: `sns.boxplot(x="body-style", y="price", data=df)` creates a box plot to compare "body-style" categories with "price."
+
+6. Descriptive Statistical Analysis:
+   - `df.describe()` provides summary statistics for continuous variables, including count, mean, standard deviation, minimum, maximum, and quartiles.
+   - `df.describe(include=['object'])` does the same for categorical variables.
+
+7. Value Counts:
+   - `df['drive-wheels'].value_counts()` counts the number of occurrences for each category in a categorical variable.
+
+8. Grouping Data:
+   - The `groupby()` function groups data based on specific categories or variables.
+   - Example: `df_group_one = df[['drive-wheels','body-style','price']]` selects specific columns for grouping.
+   - Then, you can calculate statistics for each group, such as the average price for different drive-wheel categories.
+
+9. Pivot Tables:
+   - Pivot tables help organize grouped data into a tabular format.
+   - `grouped_test1.pivot(index='drive-wheels', columns='body-style')` creates a pivot table with drive-wheels as rows and body-style as columns.
+
+10. Pearson Correlation:
+    - Pearson correlation measures the linear relationship between two variables.
+    - `stats.pearsonr(x, y)` calculates the Pearson Correlation Coefficient and its associated p-value.
+    - A high correlation coefficient (close to 1 or -1) indicates a strong linear relationship, while a low p-value suggests statistical significance.
+
+11. Correlation and Causation:
+    - Emphasizes that correlation does not imply causation. Correlation shows a relationship, but further analysis is needed to establish causation.
+
+In your analysis, you've explored variables such as engine size, highway mpg, peak rpm, stroke, and more, assessing their relationships with car prices. This is a fundamental step in understanding which variables are important for building predictive models. You've also examined how to use various visualization techniques to convey these relationships effectively.
+
+### Lab Exploratory Data Analysis - Used Car Pricing
+[Lab reviewed Sheet](https://github.com/MohanaTejaswini/IBM-Data-Analyst-Professional-Certificate/blob/main/7%20-%20Data%20Analysis%20with%20Python/%E2%9C%8D%F0%9F%93%82Hands-on-Lab-FILES/week%203-%20Lab%20Exploratory%20Data%20Analysis%20(E)-%20Laptop%20Pricing-%20Exploratory_data_analysis.jupyterlite.ipynb)
+
+1. **Visualize individual feature patterns**:
+   - In this part of the lab, you are visualizing the relationship between individual features and the target variable "Price."
+   - `sns.regplot`: This function is used to create a regression plot. It shows the relationship between two variables by fitting a linear regression model and plotting the data points.
+   - `x` and `y` parameters in `sns.regplot` specify the variables to be plotted on the x-axis and y-axis.
+   - `plt.ylim(0,)` sets the y-axis limit to start from 0. This is used to ensure that the plot starts from 0 on the y-axis.
+
+2. **Descriptive Statistical Analysis**:
+   - In this part of the lab, you are generating statistical descriptions of the dataset, including both numeric and categorical data.
+   - `df.describe()`: This function provides statistical information such as count, mean, standard deviation, minimum, and maximum values for numeric columns in the DataFrame.
+   - `df.describe(include=['object'])`: This extends the description to include object (categorical) columns.
+
+3. **GroupBy and Pivot Tables**:
+   - Here, you are grouping the dataset by specific columns and creating a pivot table to visualize the connection between two categorical variables and the target variable.
+   - `grouped_test1`: This DataFrame is created by grouping the dataset by 'GPU' and 'CPU_core' columns and calculating the mean of the 'Price' column within each group.
+   - `grouped_pivot`: This is a pivot table created from the `grouped_test1` DataFrame to visualize the relationship between 'GPU' and 'CPU_core' with 'Price.'
+
+4. **Pearson Correlation and p-values**:
+   - You are calculating the Pearson correlation coefficients and p-values to understand the strength and significance of the relationships between various features and the target variable.
+   - `stats.pearsonr`: This function from the `scipy` library calculates the Pearson correlation coefficient and a two-tailed p-value.
+   - It measures the linear relationship between two datasets. The correlation coefficient ranges from -1 (perfect negative correlation) to 1 (perfect positive correlation), with 0 indicating no linear correlation.
+   - A low p-value suggests that the correlation is statistically significant.
+
+This lab guides you through exploring and analyzing the laptops pricing dataset, which includes data visualization, statistical analysis, and correlation measurements to understand how different features affect the price of laptops.
+
 
 ----
 
