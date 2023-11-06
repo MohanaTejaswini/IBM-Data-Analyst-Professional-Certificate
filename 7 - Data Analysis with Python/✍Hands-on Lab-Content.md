@@ -178,6 +178,8 @@ These data wrangling steps are essential for cleaning, formatting, and preparing
 
 The dataset was processed and transformed according to the objectives, and the changes were verified using `df.head()` to ensure data quality and consistency.
 
+----
+
 ## **Week 3: Hands-on Labs: Importing Data Sets**
 
 ### Lab: Importing Data Sets - Used Cars Pricing
