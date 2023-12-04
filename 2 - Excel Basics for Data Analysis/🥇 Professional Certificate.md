@@ -12,7 +12,7 @@
 
 - Analyze data in spreadsheets by using filter, sort, look-up functions, as well as pivot tables.
 
----
+-
 ### SKILLS GAIN : 
 - Data Science
 - Spreadsheet
